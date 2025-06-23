@@ -7,6 +7,8 @@ import { ScrollArea } from '@/components/ui/scroll-area'
 import { NavigationItem } from './navigation-item'
 import { ModeToggle } from '@/components/mode-toggle'
 import { UserButton } from '@clerk/nextjs'
+import Link from 'next/link'
+import { ActionTooltip } from '@/components/action-tooltip'
 
 export const NavigationSidebar = async () => {
   const profile = await currentProfile()
@@ -27,6 +29,14 @@ export const NavigationSidebar = async () => {
 
   return (
     <div className='z-50 space-y-4 flex flex-col items-center h-full text-primary w-full py-3 sidebar-bg'>
+      {/* TeamUp Home Button */}
+      <ActionTooltip side='right' align='center' label='Go to TeamUp Home'>
+        <Link href='/home' className='group flex items-center mb-2'>
+          <div className='flex mx-3 h-[48px] w-[48px] rounded-full transition-all overflow-hidden items-center justify-center bg-gradient-to-br from-[#6c47ff] via-[#232946] to-[#3d2c8d] shadow-lg border-2 border-primary hover:scale-105'>
+            <span className='text-lg font-bold text-primary-foreground select-none'>T</span>
+          </div>
+        </Link>
+      </ActionTooltip>
       <NavigationAction />
       <Separator className='h-[2px] bg-zinc-300 dark:bg-zinc-700 rounded-md w-12 mx-auto' />
       <ScrollArea className='flex-1 w-full'>
