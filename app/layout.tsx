@@ -16,8 +16,8 @@ import Loading from '@/components/loading'
 const font = Open_Sans({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'NexusChat 1.0 | A Discord Clone',
-  description: 'NexusChat by Zack Murray',
+  title: 'TeamUp | Voice Chat',
+  description: 'TeamUp by Metin&Mertcan',
 }
 
 export default function RootLayout({
