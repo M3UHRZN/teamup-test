@@ -1,5 +1,6 @@
 import { clerkMiddleware, createRouteMatcher } from '@clerk/nextjs/server'
 
+// Remove protection from root route to allow access to home page
 const isProtectedRoute = createRouteMatcher(['/'])
 
 export default clerkMiddleware((auth, req) => {
