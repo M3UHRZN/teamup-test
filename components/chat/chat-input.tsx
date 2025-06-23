@@ -55,7 +55,7 @@ export const ChatInput = ({ apiUrl, query, name, type }: ChatInputProps) => {
 
   return (
     <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)}>
+      <form onSubmit={form.handleSubmit(onSubmit)} className='chatbox-bg'>
         <FormField
           control={form.control}
           name='content'

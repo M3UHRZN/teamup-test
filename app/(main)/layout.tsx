@@ -6,7 +6,7 @@ const MainLayout = async ({ children }: { children: React.ReactNode }) => {
       <div className='invisible md:visible md:flex h-full w-[72px] z-50 flex-col fixed inset-y-0 '>
         <NavigationSidebar />
       </div>
-      <main className='md:pl-[72px] h-full'>{children}</main>
+      <main className='md:pl-[72px] h-full bg-none'>{children}</main>
     </div>
   )
 }

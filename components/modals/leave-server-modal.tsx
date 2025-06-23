@@ -46,7 +46,7 @@ export const LeaveServerModal = () => {
   return (
     <Dialog open={isModalOpen} onOpenChange={onClose}>
       <DialogContent
-        className='bg-white text-black p-0 overflow-hidden'
+        className='bg-background text-foreground p-0 overflow-hidden'
         aria-describedby='leave-server'
       >
         <DialogHeader className='pt-8 px-6'>
@@ -56,15 +56,15 @@ export const LeaveServerModal = () => {
           >
             Leave Server
           </DialogTitle>
-          <DialogDescription className='text-zinc-500 text-center'>
+          <DialogDescription className='text-muted-foreground text-center'>
             Are you sure you want to leave{' '}
-            <span className='font-semibold text-emerald-500'>
+            <span className='font-semibold text-primary'>
               {server?.name}
             </span>
             ?
           </DialogDescription>
         </DialogHeader>
-        <DialogFooter className='bg-gray-100 px-6 py-4'>
+        <DialogFooter className='bg-secondary px-6 py-4'>
           <div className='flex items-center justify-between w-full'>
             <Button disabled={isLoading} onClick={onClose} variant='ghost'>
               Cancel

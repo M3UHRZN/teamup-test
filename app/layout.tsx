@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <ClerkProvider afterSignOutUrl={'/'}>
       <html lang='en' suppressHydrationWarning>
-        <body className={cn(font.className, 'bg-zinc-200 dark:bg-[#313338]')}>
+        <body className={cn(font.className)}>
           <ThemeProvider
             attribute='class'
             defaultTheme='dark'
