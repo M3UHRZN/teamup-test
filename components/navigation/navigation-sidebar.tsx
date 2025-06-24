@@ -2,6 +2,7 @@ import { currentProfile } from '@/lib/current-profile'
 import { db } from '@/lib/db'
 import { redirect } from 'next/navigation'
 import { NavigationAction } from './navigation-action'
+import { NavigationAllMembers } from './navigation-all-members'
 import { Separator } from '@/components/ui/separator'
 import { ScrollArea } from '@/components/ui/scroll-area'
 import { NavigationItem } from './navigation-item'
@@ -38,6 +39,7 @@ export const NavigationSidebar = async () => {
         </Link>
       </ActionTooltip>
       <NavigationAction />
+      <NavigationAllMembers />
       <Separator className='h-[2px] bg-zinc-300 dark:bg-zinc-700 rounded-md w-12 mx-auto' />
       <ScrollArea className='flex-1 w-full'>
         {servers.map((server) => (
