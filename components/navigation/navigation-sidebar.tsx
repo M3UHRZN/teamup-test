@@ -10,6 +10,7 @@ import { ModeToggle } from '@/components/mode-toggle'
 import { UserButton } from '@clerk/nextjs'
 import Link from 'next/link'
 import { ActionTooltip } from '@/components/action-tooltip'
+import { LayoutDashboard } from 'lucide-react'
 
 export const NavigationSidebar = async () => {
   const profile = await currentProfile()
@@ -33,8 +34,8 @@ export const NavigationSidebar = async () => {
       {/* TeamUp Home Button */}
       <ActionTooltip side='right' align='center' label='Go to TeamUp Home'>
         <Link href='/home' className='group flex items-center mb-2'>
-          <div className='flex mx-3 h-[48px] w-[48px] rounded-full transition-all overflow-hidden items-center justify-center bg-gradient-to-br from-[#6c47ff] via-[#232946] to-[#3d2c8d] shadow-lg border-2 border-primary hover:scale-105'>
-            <span className='text-lg font-bold text-primary-foreground select-none'>T</span>
+          <div className='flex mx-3 h-[48px] w-[48px] rounded-full transition-all overflow-hidden items-center justify-center bg-gradient-to-br from-[#9d8eda] via-[#6676c5] to-[#5d41d6] shadow-lg border-2 border-primary hover:scale-105'>
+            <LayoutDashboard className='h-6 w-6 text-primary-foreground' />
           </div>
         </Link>
       </ActionTooltip>

@@ -303,12 +303,6 @@ export default function HomePage() {
         <section className='max-w-4xl w-full mx-auto p-10 rounded-3xl shadow-2xl bg-gradient-to-br from-indigo-900/80 via-purple-900/80 to-blue-800/80 border border-purple-400/30 mt-20 mb-16 flex flex-col items-center backdrop-blur-sm'>
           <h1 className='text-6xl font-extrabold text-white mb-4 text-center drop-shadow-xl animate-fade-in'>TeamUp</h1>
           <h2 className='text-3xl font-semibold text-purple-200 mb-8 text-center animate-slide-up-soft'>Empower Your Community: Modern, Secure, and Dynamic Chat Platform</h2>
-          <a
-            className='px-10 py-4 rounded-full bg-gradient-to-r from-purple-700 via-indigo-600 to-blue-700 text-white font-bold text-2xl shadow-xl hover:scale-105 hover:from-purple-800 hover:to-blue-800 transition animate-scale-in-soft mb-6'
-            href='/sign-in'
-          >
-            Get Started
-          </a>
           <span className='text-purple-100 text-lg animate-fade-in mb-4'>Bring your social community together with TeamUp!</span>
           {/* Statistics */}
           <div className='flex flex-wrap justify-center gap-10 mb-8 mt-6'>
