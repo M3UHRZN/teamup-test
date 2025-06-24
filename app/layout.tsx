@@ -33,7 +33,7 @@ export default function RootLayout({
             attribute='class'
             defaultTheme='dark'
             enableSystem={true}
-            storageKey='discord-theme'
+            storageKey='teamup-theme'
             disableTransitionOnChange
           >
             <SocketProvider>
