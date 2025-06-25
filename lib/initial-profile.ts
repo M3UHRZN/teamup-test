@@ -18,23 +18,18 @@ export const initialProfile = async () => {
     return profile
   }
 
-  // Kullanıcı adını belirleme mantığı
   let displayName = ''
   
-  // 1. Önce username'i kontrol et (Clerk'te kullanıcının belirlediği)
   if (user.username) {
     displayName = user.username
   }
-  // 2. Username yoksa firstName + lastName'i kontrol et
   else if (user.firstName || user.lastName) {
     displayName = `${user.firstName || ''} ${user.lastName || ''}`.trim()
   }
-  // 3. Hiçbiri yoksa email'in @ öncesi kısmını kullan
   else if (user.emailAddresses && user.emailAddresses[0]) {
     const email = user.emailAddresses[0].emailAddress
-    displayName = email.split('@')[0] // @ öncesi kısmı al
+    displayName = email.split('@')[0]
   }
-  // 4. Son çare olarak "User" + userId'nin ilk 4 karakteri
   else {
     displayName = `User${user.id.slice(0, 4)}`
   }

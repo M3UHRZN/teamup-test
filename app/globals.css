@@ -4,19 +4,19 @@
 
 @layer base {
   :root {
-    --background: 235 30% 12%; /* Lacivertimsi koyu arka plan */
-    --foreground: 260 20% 95%; /* Açık mor-beyaz yazı */
-    --card: 240 20% 16%; /* Kartlar için koyu mor-lacivert */
+    --background: 235 30% 12%;
+    --foreground: 260 20% 95%;
+    --card: 240 20% 16%;
     --card-foreground: 260 20% 95%;
     --popover: 240 20% 16%;
     --popover-foreground: 260 20% 95%;
-    --primary: 265 60% 60%; /* Parlak mor */
+    --primary: 265 60% 60%;
     --primary-foreground: 235 30% 12%;
-    --secondary: 250 30% 30%; /* Lacivert-mor arası */
+    --secondary: 250 30% 30%;
     --secondary-foreground: 265 60% 60%;
     --muted: 240 15% 20%;
     --muted-foreground: 260 10% 60%;
-    --accent: 270 60% 50%; /* Canlı mor vurgular */
+    --accent: 270 60% 50%;
     --accent-foreground: 260 20% 95%;
     --destructive: 340 80% 40%;
     --destructive-foreground: 260 20% 95%;
@@ -29,14 +29,12 @@
     --chart-3: 235 30% 20%;
     --chart-4: 280 60% 50%;
     --chart-5: 320 60% 50%;
-    /* Sidebar için özel gradient */
     --sidebar-gradient: linear-gradient(135deg, #232946 0%, #3d2c8d 100%);
-    /* Ana içerik için özel gradient */
     --main-gradient: linear-gradient(120deg, #232946 0%, #3d2c8d 40%, #6c47ff 100%);
   }
 
   .dark {
-    --background: 240 35% 8%; /* Daha koyu lacivert-siyah */
+    --background: 240 35% 8%;
     --foreground: 260 20% 95%;
     --card: 250 25% 12%;
     --card-foreground: 260 20% 95%;
@@ -74,17 +72,14 @@
     background: var(--main-gradient);
     transition: background 0.8s cubic-bezier(0.4,0,0.2,1), color 0.5s cubic-bezier(0.4,0,0.2,1);
   }
-  /* Sidebar için özel class */
   .sidebar-bg {
     background: var(--sidebar-gradient);
     transition: background 0.8s cubic-bezier(0.4,0,0.2,1);
   }
-  /* Chatbox için özel class */
   .chatbox-bg {
     background: linear-gradient(120deg, #232946 0%, #3d2c8d 100%);
     transition: background 0.8s cubic-bezier(0.4,0,0.2,1);
   }
-  /* Inputbox için özel class */
   .inputbox-bg {
     background: linear-gradient(90deg, #232946 0%, #3d2c8d 100%);
     transition: background 0.8s cubic-bezier(0.4,0,0.2,1);
@@ -100,7 +95,6 @@
   }
 }
 
-/* Custom animations for home page */
 @keyframes float {
   0%, 100% { 
     transform: translateY(0px) rotate(0deg); 
