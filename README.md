@@ -6,10 +6,9 @@ First, run the development server:
 
 ```bash
 1- npm install
+
 2- npx prisma generate
 3- npx prisma db push
-//(4. adamı yazarsan sıkıntı cıkabılır.)
-4- npm install livekit-client @livekit/components-react @livekit/components-styles --save
 
 5- npm run dev
 # or
