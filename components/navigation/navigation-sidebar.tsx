@@ -41,7 +41,7 @@ export const NavigationSidebar = async () => {
       </ActionTooltip>
       <NavigationAction />
       <NavigationAllMembers />
-      <Separator className='h-[2px] bg-zinc-300 dark:bg-zinc-700 rounded-md w-12 mx-auto' />
+      <Separator className='h-[2px] bg-blue-800 dark:bg-zinc-700 rounded-md w-12 mx-auto' />
       <ScrollArea className='flex-1 w-full'>
         {servers.map((server) => (
           <div className='mb-4' key={server.id}>
